@@ -3,9 +3,6 @@ package com.bootcamp.events;
 import com.bootcamp.events.customEvents.*;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-/**
- * Created by nidhi on 31/3/17.
- */
 public class MainEvent {
 
   public static void main(String[] args) {
@@ -32,16 +29,16 @@ public class MainEvent {
 //    employee2.setName("abc");
 //    employee2.setMailId("abc@gmail.com");
 //    employee2.setSalary(31000);
-    EmployeeEvent employeeEvent=new EmployeeEvent(employee);
-    publisher.publish(employeeEvent);
-////    WithdrawEvent withdrawEvent=new WithdrawEvent(employee);
+//    EmployeeEvent employeeEvent=new EmployeeEvent(employee);
+//    publisher.publish(employeeEvent);
+//    WithdrawEvent withdrawEvent=new WithdrawEvent(employee);
 //    publisher.publish1(withdrawEvent);
 
 //    MobileEvent mobileEvent=new MobileEvent(employee);
 //    publisher.publish2(mobileEvent);
 
-//    AtmPinEvent atmPinEvent=new AtmPinEvent(employee);
-//    publisher.publish3(atmPinEvent);
+    AtmPinEvent atmPinEvent=new AtmPinEvent(employee);
+    publisher.publish3(atmPinEvent);
 
 
     context.stop();

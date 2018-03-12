@@ -35,7 +35,7 @@ public class EmployeeListener implements ApplicationListener<EmployeeEvent> {
             String id=employee.getId();
             String maidid=employee.getMailId();
             int salary=employee.getSalary();
-            String sql="INSERT INTO Employee (id, name, maidid,salary) VALUES (?,?,?,?)";
+            String sql="INSERT INTO Employee (id, name, mailid,salary) VALUES (?,?,?,?)";
 //            String sql = "INSERT INTO user_account (username,amount)VALUES(?,?)";
             jdbcTemplate.update(sql,id,name,maidid,salary);
 

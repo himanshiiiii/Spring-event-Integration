@@ -3,9 +3,7 @@ package com.bootcamp.events.customEvents;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
 
-/**
- * Created by nidhi on 31/3/17.
- */
+
 public class CustomPublisher implements ApplicationEventPublisherAware {
 
 
